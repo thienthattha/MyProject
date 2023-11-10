@@ -12,6 +12,11 @@ $gray-900: #2a2a2a;
 $gray-1000: #272727;
 $black:    #000;
 
+// Color
+$primary: #3f51b5;
+$primary-hover: #303f9f;
+$red: #f50057;
+
 // Font size
 $font-size-large:         1.8rem;
 $font-size-base:          1.6rem;
@@ -22,7 +27,8 @@ $h1-font-size:            5.0rem;
 $h2-font-size:            4.0rem;
 $h3-font-size:            3.2rem;
 $h4-font-size:            2.4rem;
-$h5-font-size:            $font-size-large;
+$h5-font-size:            2.0rem;
+$h6-font-size:            $font-size-large;
 
 $h1-font-size-mobile:         2.8rem;
 $h2-font-size-mobile:         2.4rem;

@@ -1,0 +1,68 @@
+@import '../../GlobalStyles/GlobalStyles.scss';
+
+.btn {
+  background: $white;
+  border: none;
+  min-width: 60px;
+  min-height: 20px;
+  border-radius: 5px;
+  font-size: $font-size-base;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+// Btn variant
+.btn-primary {
+  color: $white;
+  background: $primary;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+  padding: 4px 10px;
+  
+  &:hover {
+    background: $primary-hover;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+  }
+}
+
+.btn-outline-primary {
+  padding: 3px 9px;
+  color: $primary;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+
+  &:hover {
+    border: 1px solid $primary;
+    background: rgba(63, 81, 181, 0.04);
+  }
+}
+
+.btn-outline-red {
+  padding: 3px 9px;
+  color: $red;
+  border: 1px solid rgba(245, 0, 87, 0.5);
+
+  &:hover {
+    border: 1px solid $red;
+    background: rgba(245, 0, 87, 0.04);
+  }
+}
+
+.btn-outline-black {
+  padding: 3px 9px;
+  color: $gray-1000;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+
+  &:hover {
+    border: 1px solid $gray-1000;
+    background: rgba(0, 0, 0, 0.04);
+  }
+}
+
+// Btn Size
+.btn-lg {
+  font-size: $font-size-large;
+  min-width: 100px;
+  min-height: 30px;
+}

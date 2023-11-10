@@ -1,0 +1,81 @@
+@import '../GlobalStyles/GlobalStyles.scss';
+
+.to-do-list {
+  padding: 50px 0px;
+
+  &__content {
+    position: relative;
+    text-align: center;
+    max-width: 532px;
+    margin: 0px auto;
+    border: 1px solid $primary;
+    padding: 15px;
+  }
+
+  &__title {
+    color: $primary;
+    padding-bottom: 15px;
+  }
+  
+  &__input {
+    padding-bottom: 15px;
+
+    input {
+      font-size: $font-size-large;
+      margin-right: 10px;
+      width: calc(100% - 110px);
+    }
+  }
+
+  &__list {
+    &__head {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+
+    &__body {
+      .item {
+        background: $gray-100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        padding: 5px;
+        
+        &:last-child {
+          margin-bottom: 0px;
+        }
+
+        &__info {
+          width: 50%;
+          overflow-wrap: anywhere;
+
+          &__done {
+            text-decoration: line-through;
+            color: $gray-500;
+          }
+        }
+  
+        &__btn {
+          width: 50%;
+  
+          button {
+            margin: 3px;
+          }
+        }
+      }
+
+    }
+  }
+
+  &__notification {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.item-ntn-none {
+  display: none;
+}

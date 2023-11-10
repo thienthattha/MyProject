@@ -1,0 +1,146 @@
+@import 'normalize.css';
+@import './Responsive.scss';
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: 1.5;
+  // Tối ưi hiển thị nhanh nhất
+  text-rendering: optimizeSpeed;
+  color: $black;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1 {
+  font-size: $h1-font-size-mobile;
+
+  @include min-lg {
+    font-size: $h1-font-size;
+  }
+}
+
+h2 {
+  font-size: $h2-font-size-mobile;
+
+  @include min-lg {
+    font-size: $h2-font-size;
+  }
+}
+
+h3 {
+  font-size: $h3-font-size-mobile;
+
+  @include min-lg {
+    font-size: $h3-font-size;
+  }
+}
+
+h4 {
+  font-size: $h4-font-size-mobile;
+
+  @include min-lg {
+    font-size: $h4-font-size;
+  }
+}
+
+h5 {
+  font-size: $h5-font-size-mobile;
+
+  @include min-lg {
+    font-size: $h5-font-size;
+  }
+}
+
+h6 {
+  font-size: $h6-font-size-mobile;
+
+  @include min-lg {
+    font-size: $h6-font-size;
+  }
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0px 15px;
+
+  @include min-sm {
+    max-width: 540px;
+  }
+
+  @include min-lg {
+    max-width: 720px;
+  }
+
+  @include min-lg {
+    max-width: 960px;
+  }
+
+  @include min-xl {
+    max-width: 1100px;
+  }
+
+  @include min-xxl {
+    max-width: 1440px;
+  }
+}
+
+.input-to-do-list {
+  width: 100%;
+  font-size: $font-size-base;
+  color: $gray-900;
+  border: none;
+  outline: none;
+  padding: 6px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+
+  &:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+  }
+
+  &:focus {
+    border-bottom: 2px solid $primary;
+  }
+
+  &::placeholder {
+    color: $gray-600;
+  }
+}
+
+.link-text {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-hover;
+    text-decoration: underline;
+  }
+}
+
+.error {
+  color: $red;
+  font-size: $font-size-small;
+}
