@@ -10,6 +10,7 @@ function ListToDo({
   setInputChange,
   inputChange,
   onDataLayout,
+  handleRemove,
 }) {
   return dataToDoList?.length > 0 ? (
     <div className="to-do-list__list">
@@ -20,7 +21,7 @@ function ListToDo({
       <div className="to-do-list__list__body">
         {dataToDoList.map((item, index) => {
           return (
-            <div key={index} index={item.id} className="item">
+            <div key={item.id} index={item.id} className="item">
               <div className="item__info">
                 <input
                   className="input-to-do-list item-ntn-none"
@@ -80,6 +81,24 @@ function ListToDo({
             </div>
           );
         })}
+      </div>
+      <div className="to-do-list__list__footer">
+        <Button
+          className="btn"
+          variant="red"
+          size="lg"
+          onClick={() => handleRemove("all")}
+        >
+          {onDataLayout?.["Remove all"]}
+        </Button>
+        <Button
+          className="btn"
+          variant="red"
+          size="lg"
+          onClick={() => handleRemove("allDone")}
+        >
+          {onDataLayout?.["Remove all done"]}
+        </Button>
       </div>
     </div>
   ) : (

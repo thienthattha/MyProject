@@ -76,6 +76,14 @@ function ToDoList() {
     setItem(evt.target.closest(".item"));
   };
 
+  const handleRemove = (evt) => {
+    if(evt === 'all') {
+      console.log("aaaaaaaabbb")
+    } else if(evt === 'allDone') {
+      console.log("aaaaaaaa")
+    }
+  };
+
   useEffect(() => {
     dispatch(dataToDoListStart());
   }, []);
@@ -109,6 +117,7 @@ function ToDoList() {
             handleDelete={handleDelete}
             handleSave={handleSave}
             handleCancel={handleCancel}
+            handleRemove={handleRemove}
             dataToDoList={dataToDoList}
             setInputChange={setInputChange}
             inputChange={inputChange}

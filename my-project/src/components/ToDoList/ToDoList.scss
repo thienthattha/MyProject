@@ -36,6 +36,8 @@
     }
 
     &__body {
+      padding-bottom: 15px;
+
       .item {
         background: $gray-100;
         display: flex;
@@ -67,6 +69,11 @@
         }
       }
 
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-evenly;
     }
   }
 

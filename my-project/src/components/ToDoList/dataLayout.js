@@ -10,7 +10,9 @@ const dataLayout = {
   "Lable action": "Action",
   "Lable add to do": "Add to do",
   "Error message": "Please do not leave the field blank",
-  "Mesage nothing": "Nothing to do!"
+  "Mesage nothing": "Nothing to do!",
+  "Remove all": "Remove All",
+  "Remove all done": "Remove All Done"
 };
 
 export default dataLayout;
