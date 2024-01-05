@@ -15,6 +15,8 @@ import {
   doneItemToDoListFailure,
   saveItemToDoListSuccess,
   saveItemToDoListFailure,
+  removeAllDoneSuccess,
+  removeAllDoneFailure,
 } from "../../actions/toDoList";
 import { API_TO_DO_LIST } from "./config";
 

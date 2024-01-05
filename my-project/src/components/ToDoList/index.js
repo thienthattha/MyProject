@@ -77,10 +77,15 @@ function ToDoList() {
   };
 
   const handleRemove = (evt) => {
-    if(evt === 'all') {
-      console.log("aaaaaaaabbb")
-    } else if(evt === 'allDone') {
-      console.log("aaaaaaaa")
+    if (evt === "all") {
+      dataToDoList.forEach((element) => {
+        dispatch(deleteItemToDoListStart({ index: element.id }));
+      });
+    } else if (evt === "allDone") {
+      const dataDoneToDoList = dataToDoList.filter((item) => item?.isChecked === true);
+      dataDoneToDoList.forEach((element) => {
+        dispatch(deleteItemToDoListStart({ index: element.id }));
+      })
     }
   };
 
